@@ -10,19 +10,19 @@ class _ItemCollectionState extends State<ItemCollection> {
     {
       "image": "assets/images/6.jpeg",
       "fruitName": "Apple",
-      "price": "2",
+      "price": "2.5",
       "isFav": true
     },
     {
       "image": "assets/images/7.jpeg",
       "fruitName": "Grapes",
-      "price": "2",
+      "price": "3.5",
       "isFav": false
     },
     {
       "image": "assets/images/8.jpeg",
       "fruitName": "Cherry",
-      "price": "2",
+      "price": "5",
       "isFav": true
     },
     {
@@ -34,13 +34,13 @@ class _ItemCollectionState extends State<ItemCollection> {
     {
       "image": "assets/images/10.jpeg",
       "fruitName": "Strowberry",
-      "price": "2",
+      "price": "7",
       "isFav": false
     },
     {
       "image": "assets/images/11.jpeg",
       "fruitName": "Oranges",
-      "price": "2",
+      "price": "3",
       "isFav": false
     },
   ];
