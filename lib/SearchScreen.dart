@@ -15,11 +15,11 @@ class SearchScreen extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(10))),
           prefixIcon: Icon(
             Icons.search,
-            size: 25.0,
+            size: 30.0,
           ),
           suffixIcon: Icon(
             Icons.sort,
-            size: 25.0,
+            size: 30.0,
             color: Colors.redAccent,
           ),
           hintText: 'Search for item ...',

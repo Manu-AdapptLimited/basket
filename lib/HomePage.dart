@@ -47,7 +47,10 @@ class _MyHomePageState extends State<MyHomePage> {
             SingleChildScrollView(
               child: Container(
                 height: MediaQuery.of(context).size.height - 320.0,
-                child: TabBarView(children: <Widget>[
+                child: TabBarView(
+                
+                  
+                  children: <Widget>[
                   ItemCollection(),
                   ItemCollection(),
                   ItemCollection(),
