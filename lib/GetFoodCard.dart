@@ -4,6 +4,7 @@ import 'AddToCartBtn.dart';
 import 'IncreamentBox.dart';
 import 'NameTag.dart';
 
+// ignore: must_be_immutable
 class GetFoodCard extends StatefulWidget {
   final String imgPath;
   final String fruitName;
@@ -61,8 +62,7 @@ class _GetFoodCardState extends State<GetFoodCard> {
               children: <Widget>[
                 widget.isTapped == true ? IncreamentBox() : AddToCartButton(),
 
-                // IncreamentBox(),
-                // AddToCartButton(),
+              
                 NameTag(
                   fruitName: widget.fruitName,
                   price: widget.price,

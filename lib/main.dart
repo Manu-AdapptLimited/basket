@@ -1,3 +1,4 @@
+import 'package:basket/Cart/CartScreen.dart';
 import 'package:flutter/material.dart';
 import 'HomePage.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.grey[100],
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(),
+      home: CartScreen(),
     );
   }
 }

@@ -10,15 +10,13 @@ class TabBarScreen extends StatefulWidget {
 
 class _TabBarScreenState extends State<TabBarScreen>
     with SingleTickerProviderStateMixin {
-  TabController _tabController;
-  PageController _pageController;
+ 
   int currentIndex = 0;
   var currentPage = 0;
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 5, vsync: this);
-    _pageController = PageController(initialPage: 0,keepPage: true);
+   
   }
 
   @override
