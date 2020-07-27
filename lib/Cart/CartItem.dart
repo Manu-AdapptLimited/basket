@@ -34,7 +34,6 @@ class CartItem extends StatelessWidget {
             ),
           ),
           Badge(
-            
             badgeColor: Colors.redAccent,
             padding: EdgeInsets.all(0.0),
             badgeContent: Icon(
