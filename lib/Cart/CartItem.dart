@@ -29,13 +29,13 @@ class CartItem extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.all(Radius.circular(10))),
             child: Image.asset(
-              'assets/images/10.jpeg',
+              'assets/images/6.jpeg',
               fit: BoxFit.scaleDown,
             ),
           ),
           Badge(
             
-            badgeColor: Colors.red,
+            badgeColor: Colors.redAccent,
             padding: EdgeInsets.all(0.0),
             badgeContent: Icon(
               Icons.cancel,

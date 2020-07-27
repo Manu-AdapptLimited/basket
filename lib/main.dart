@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.grey[100],
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: CartScreen(),
+      home: MyHomePage(),
     );
   }
 }

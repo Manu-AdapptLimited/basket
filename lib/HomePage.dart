@@ -1,3 +1,4 @@
+import 'package:basket/Cart/CartScreen.dart';
 import 'package:basket/Category.dart';
 import 'package:basket/SearchScreen.dart';
 import 'package:basket/TabBarScreen.dart';
@@ -47,10 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
             SingleChildScrollView(
               child: Container(
                 height: MediaQuery.of(context).size.height - 320.0,
-                child: TabBarView(
-                
-                  
-                  children: <Widget>[
+                child: TabBarView(children: <Widget>[
                   ItemCollection(),
                   ItemCollection(),
                   ItemCollection(),
@@ -63,7 +61,10 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.redAccent,
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => CartScreen()));
+          },
           child: Icon(
             Icons.shopping_cart,
             color: Colors.white,
