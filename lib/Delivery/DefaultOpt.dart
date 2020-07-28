@@ -1,14 +1,33 @@
 import 'package:basket/Delivery/DropDownScreen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
 
 class DefaultOpt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      
+      padding: EdgeInsets.only(bottom: 10,top: 8),
+      decoration: BoxDecoration(
+        color:Colors.grey[100],
+        boxShadow: [
+          BoxShadow(
+            color: Colors.white.withOpacity(0.8),
+            offset:Offset(0,6),
+            // blurRadius: 10
+          ),
+           BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            offset:Offset(0,6),
+            // blurRadius: 10
+          ),
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            offset:Offset(0,6),
+            // blurRadius: 10
+          )
+
+        ]
+      ),
       child: Column(
-      
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Container(
@@ -72,7 +91,7 @@ class DefaultOpt extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.all(5),
                   decoration: BoxDecoration(
-                    border: Border.all(color: Colors.black54),
+                    border: Border.all(color: Colors.black45),
                     borderRadius: BorderRadius.all(
                       Radius.circular(4),
                     ),
@@ -101,26 +120,26 @@ class DefaultOpt extends StatelessWidget {
                   ]),
             ),
           ),
-            SizedBox(height: 15,),
-            Padding(
-              padding: const EdgeInsets.only(left: 25,right: 20),
-              child: Container(
-                alignment: Alignment.center,
-                child: RaisedButton(
-                  color: Colors.red[400],
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 80,right: 80),
-                    child: Text('PROCEED TO PAY',style: TextStyle(
-                      color: Colors.white
-                    ),),
+          SizedBox(
+            height: 15,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 25, right: 20),
+            child: Container(
+              alignment: Alignment.center,
+              child: RaisedButton(
+                color: Colors.red[400],
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 80, right: 80),
+                  child: Text(
+                    'PROCEED TO PAY',
+                    style: TextStyle(color: Colors.white),
                   ),
-                  onPressed: (){},
-
                 ),
+                onPressed: () {},
               ),
-            )
-
-
+            ),
+          ),
         ],
       ),
     );

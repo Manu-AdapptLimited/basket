@@ -10,17 +10,17 @@ class Address extends StatelessWidget {
         boxShadow: [
        BoxShadow(
          color: Color.fromRGBO(220, 220, 220, 1),
-         blurRadius: 4,
+         blurRadius: 3,
          offset: Offset(0, 6) 
        ),
        BoxShadow(
          color: Colors.grey[400],
-         blurRadius: 4,
+         blurRadius: 3,
          offset: Offset(0, 6) 
        ),
        BoxShadow(
          color: Colors.grey[500],
-         blurRadius: 4,
+         blurRadius: 3,
          offset: -Offset(0, 6) 
        )
         ]

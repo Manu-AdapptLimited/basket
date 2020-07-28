@@ -37,7 +37,7 @@ class DeliveryOpt extends StatelessWidget {
                 ),
                 GiftOrder(),
                 SizedBox(
-                  height: 15,
+                  height: 10,
                 ),
                 DefaultOpt()
               ],
