@@ -1,5 +1,6 @@
 import 'package:basket/Cart/CartScreen.dart';
 import 'package:flutter/material.dart';
+import 'Delivery/DeliveryOpt.dart';
 import 'HomePage.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.grey[100],
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(),
+      home: DeliveryOpt(),
     );
   }
 }
