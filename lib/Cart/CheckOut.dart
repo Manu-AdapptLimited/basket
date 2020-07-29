@@ -12,7 +12,7 @@ class CheckOut extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text('Total'),
-              Text('\$149,98',style: TextStyle(
+              Text('\$149.98',style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
                 color: Colors.red
