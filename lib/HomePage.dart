@@ -1,3 +1,4 @@
+import 'package:basket/Acount/Account.dart';
 import 'package:basket/Cart/CartScreen.dart';
 import 'package:basket/Category.dart';
 import 'package:basket/SearchScreen.dart';
@@ -80,6 +81,11 @@ class _MyHomePageState extends State<MyHomePage> {
             child: DockBottomBar(),
           ),
         ),
+
+        // drawer: Drawer(
+          
+        //  child: Account(),
+        // ),
       ),
     );
   }
