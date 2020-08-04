@@ -3,15 +3,13 @@ import 'package:basket/OrderDetails/SummaryContent.dart';
 import 'package:basket/OrderDetails/TabScreen.dart';
 import 'package:flutter/material.dart';
 
-
-
 class Summary extends StatefulWidget {
   @override
   _SummaryState createState() => _SummaryState();
 }
 
-class _SummaryState extends State<Summary> with SingleTickerProviderStateMixin{
-   TabController tabController;
+class _SummaryState extends State<Summary> with SingleTickerProviderStateMixin {
+  TabController tabController;
   var _tab = ['Summary', 'Items'];
 
   @override
@@ -54,7 +52,6 @@ class _SummaryState extends State<Summary> with SingleTickerProviderStateMixin{
               ),
               onPressed: () {})
         ],
-
         bottom: TabBar(
           unselectedLabelColor: Colors.black54,
           indicatorColor: Colors.white,
@@ -66,32 +63,22 @@ class _SummaryState extends State<Summary> with SingleTickerProviderStateMixin{
               text: e,
             );
           }).toList(),
-        ) ,
+        ),
       ),
-      body: TabBarView(
-        controller: tabController,
-        children: [
-          OrientationBuilder(builder: (context, orientation) {
-        if (orientation == Orientation.portrait) {
-          return Column(
-            children: <Widget>[
-              SummaryContent()
-            ]
-          );
-        } else {
-          return Container(
-              height: 450.0,
-              child: Expanded(
-                                child: ListView(
-                  children: <Widget>[
-                    SummaryContent()
-                   ],
-                ),
-              ));
-        }
-      }),
-        //  SummaryContent(),
-         ItemsContent()
+      body: TabBarView(controller: tabController, children: [
+        OrientationBuilder(builder: (context, orientation) {
+          if (orientation == Orientation.portrait) {
+            return Column(children: <Widget>[SummaryContent()]);
+          } else {
+            return Container(
+                height: 450.0,
+                child: ListView(
+                  children: <Widget>[SummaryContent()],
+                ));
+          }
+        }),
+       
+        ItemsContent()
       ]),
     );
   }
